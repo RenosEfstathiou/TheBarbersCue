@@ -13,6 +13,13 @@ const BarberSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  reservations: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'reservations'
+    }
+  ],
+
   createdAt: {
     type: Date,
     default: Date.now
