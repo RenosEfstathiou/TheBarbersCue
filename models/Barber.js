@@ -1,7 +1,11 @@
 const mongoose = require('mongoose');
 
-const Admin = new mongoose.Schema({
+const BarberSchema = new mongoose.Schema({
   name: {
+    type: String,
+    required: true
+  },
+  phone: {
     type: String,
     required: true
   },
@@ -9,14 +13,10 @@ const Admin = new mongoose.Schema({
     type: String,
     required: true
   },
-  password: {
-    type: String,
-    required: true
-  },
-  secretKey: {
-    type: String,
-    required: true
+  createdAt: {
+    type: Date,
+    default: Date.now
   }
 });
 
-module.exports = Admin = mongoose.model('admin', Admin);
+module.exports = Barber = mongoose.model('barber', BarberSchema);
