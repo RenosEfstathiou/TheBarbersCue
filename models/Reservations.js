@@ -22,7 +22,12 @@ const ReservationsSchema = new mongoose.Schema({
     required: true
   },
   barber: {
-    type: String,
-    required: true
+    type: Schema.Types.ObejectId,
+    ref: 'barbers'
   }
 });
+
+module.exports = Reservation = mongoose.model(
+  'reservation',
+  ReservationsSchema
+);

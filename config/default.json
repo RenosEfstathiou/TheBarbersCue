@@ -1,3 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://renosef:haipie7I!3@thebarberscue.80xcr.mongodb.net/TheBarbersCue?retryWrites=true&w=majority"
+    "mongoURI": "mongodb+srv://renosef:haipie7I!3@thebarberscue.80xcr.mongodb.net/TheBarbersCue?retryWrites=true&w=majority",
+    "jwtSecret": "barbersSecret"
 }
