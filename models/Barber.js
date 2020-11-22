@@ -15,8 +15,8 @@ const BarberSchema = new mongoose.Schema({
   },
   reservations: [
     {
-      type: Schema.Types.ObjectId,
-      ref: 'reservations'
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'reservation'
     }
   ],
 
