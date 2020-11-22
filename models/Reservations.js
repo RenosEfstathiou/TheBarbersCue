@@ -22,8 +22,8 @@ const ReservationsSchema = new mongoose.Schema({
     required: true
   },
   barber: {
-    type: Schema.Types.ObejectId,
-    ref: 'barbers'
+    type: mongoose.Schema.Types.ObejectId,
+    ref: 'barber'
   }
 });
 
