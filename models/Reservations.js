@@ -17,13 +17,18 @@ const ReservationsSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  time: {
+  hour: {
     type: String,
     required: true
   },
   barber: {
-    type: mongoose.Schema.Types.ObejectId,
-    ref: 'barber'
+    id: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'barber'
+    },
+    name: {
+      type: String
+    }
   }
 });
 

@@ -1,0 +1,3 @@
+aWe are gonna search in all reservations using barber's id to show all reservations for that day
+
+We are gonna take from our action the Barbers id and then  make a reservation using his id
